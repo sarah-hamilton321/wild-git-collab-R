@@ -37,7 +37,8 @@ diamonds_set <- diamonds %>%
 
 ```{r break-it-1}
 ggplot(data = diamonds, aes(x = carat, y = depth)) +
-  geom_point()
+  geom_point() +
+  labs(title = "title")
 
 
 ```
