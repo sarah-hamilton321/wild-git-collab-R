@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=TRUE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
+library(ggplot2)
 ```
 
 ## STEP 5: No merge conflicts!
@@ -25,7 +26,8 @@ library(tidyverse)
 ### ggplot2 package) and create a subset based on filtering, e.g., 
 ### size greater than 1 carat or cut is "Ideal"
 
-
+diamonds_set <- diamonds %>% 
+  filter(cut == 'Ideal')
 
 ```
 
