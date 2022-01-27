@@ -37,9 +37,15 @@ diamonds_set <- diamonds %>%
 
 ```{r break-it-1}
 
+
 diamond_ham <- diamonds %>% 
   group_by(price, cut) %>% 
   filter(carat > 0.3)
+
+ggplot(data = diamonds, aes(x = carat, y = depth)) +
+  geom_point() +
+  labs(title = "title")
+
 
 
 ```
