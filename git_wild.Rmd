@@ -53,10 +53,16 @@ ggplot(data = diamonds, aes(x = carat, y = depth)) +
 ## STEP 11: And even more merge conflicts!
 
 ```{r break-it-2}
+
+ggplot(data = diamonds, aes(x = carat, y = table)) +
+  geom_point() +
+  labs(title = "title")
+
 ### Both partners - delete this comment, then write some code here
 ### to plot, summarize, calculate something simple using the diamonds
 ### dataset.
 diamond_girl <- diamonds %>% 
   filter(cut == 'Premium')
+
 
 ```
